@@ -1,0 +1,16 @@
+{
+  "name": "cyclic-loader-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dep-1.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader import-in-the-middle/hook.mjs dep-1.js",
+    "start-no-loader": "node dep-1.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "import-in-the-middle": "^1.4.2"
+  }
+}
